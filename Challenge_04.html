@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cars Array | Challenge 4</title>
+    </head>
+    <body>
+
+        <script>
+            // Define an array named cars
+            var cars = ["toyota", "honda", "mazda", "mitsubishi", "tesla", "lexus"];
+
+            // Log the first item to the console
+            console.log("First item: " + cars[0]);
+
+            // Log the last item to the console using the length property
+            console.log("Last item: " + cars[cars.length - 1]);
+
+            // Add an item "mercedes-benz" to the array
+            cars.push("mercedes-benz");
+
+            // Log the added item to the console
+            console.log("Added item: " + cars[cars.length - 1]);
+
+            // Loop through all items of the array and log them to the console
+            console.log("All items:");
+            for (var i = 0; i < cars.length; i++) {
+                console.log(cars[i]);
+            }
+        </script>
+
+    </body>
+</html>
