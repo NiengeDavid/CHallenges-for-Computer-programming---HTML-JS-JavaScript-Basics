@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Grade Calculator | Challenge 2</title>
+    </head>
+    <body>
+
+        <script>
+            // Prompt the user for their mark
+            var userMark = prompt("Please enter your mark:");
+
+            // Convert the input to a number
+            var mark = parseFloat(userMark);
+
+            // Check the grade based on the given conditions
+            if (mark >= 70 && mark <= 100) {
+                document.write("<h1>Grade: A</h1>");
+            } else if (mark >= 61 && mark <= 69) {
+                document.write("<h1>Grade: B</h1>");
+            } else if (mark >= 50 && mark <= 60) {
+                document.write("<h1>Grade: C</h1>");
+            } else if (mark >= 40 && mark <= 49) {
+                document.write("<h1>Grade: D</h1>");
+            } else if (mark >= 0 && mark <= 40) {
+                document.write("<h1>Grade: F</h1>");
+            } else {
+                document.write("<h1>Invalid mark entered. Please enter a valid mark.</h1>");
+            }
+        </script>
+
+    </body>
+</html>
